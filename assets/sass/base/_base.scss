@@ -28,11 +28,26 @@ svg {
   height: 50%;
 }
 
-svg:hover {
-  fill: #50c6db;
-  transform: scale(1.25);
-  transition-duration: 1.5s;
-}
+@keyframes opacity {
+  0% { opacity: 0; }
+  60% { opacity: 2; }
+  100% { opacity: 1; }
+  } 
+
+.grafico:hover {
+  margin-top: 25px;
+  margin-right: 35px;
+  animation-name: opacity;
+  animation-duration: 7s;
+  animation-timing-function: cubic-bezier(2);
+  animation-iteration-count: initial;
+ }
+  
+ 
+
+  
+ 
+  
 
 .text {
   text-align: right !important;
@@ -52,6 +67,7 @@ svg:hover {
     display: none;
     
   }
+  
   
 }
 
